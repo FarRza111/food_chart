@@ -1,7 +1,8 @@
 from dataclasses import dataclass
+from helpers import FoodVModel
 from typing import Optional, Union
 from pydantic import BaseModel, validator, ValidationError, field_validator
-from helpers import FoodVModel
+
 
 @dataclass
 class FoodItem:
