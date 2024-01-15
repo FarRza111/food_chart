@@ -45,10 +45,7 @@ class User:
                 quant = item_and_quant.get("quantity", 0)
                 price = food_item.price
                 total_price+=price 
-                print(food)
-                print(quant)
-                print(price)
-                print(f'this is {food} = {quant} and price: {price}')
+                print(f'this is food name:{food} and quantity is: {quant} and price is: {price}')
                 
                 
             discount_percentage = self.get_discount_percent()
@@ -57,7 +54,7 @@ class User:
 
             print(amnt_to_pay)
             print(discounted_amnt)
-        return f'this is amnt to pay: {amnt_to_pay} and discounted amnt : {discounted_amnt}'
+        return f'this is amnt to pay: {amnt_to_pay} and discounted amnt : {discounted_amnt} and total price is {total_price}'
             
     def get_discount_percent(self):
         
@@ -71,8 +68,10 @@ class User:
 if __name__ == "__main__":
 
     food_item = FoodItem(1, 'pizza', 64.03)
+    food_item2 = FoodItem(1, 'apple', 29.03)
     user_obj = User('Fariz',1233, 'silver')
     print(user_obj.add_to_char(food_item.name, 14))
+    print(user_obj.add_to_char(food_item2.name, 55))
     print(user_obj.viw_char())
 
 
