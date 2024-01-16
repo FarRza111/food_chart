@@ -1,4 +1,4 @@
-#### Food Track 
+#### Food Chart ####
 
 Details will be filled right after all classes have been generated
 
