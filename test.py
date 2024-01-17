@@ -47,13 +47,9 @@ class User:
                 total_price+=price 
                 print(f'this is food name:{food} and quantity is: {quant} and price is: {price}')
                 
-                
             discount_percentage = self.get_discount_percent()
             discounted_amnt = total_price * (discount_percentage/100)
             amnt_to_pay = total_price - discounted_amnt
-
-            print(amnt_to_pay)
-            print(discounted_amnt)
         return f'this is amnt to pay: {amnt_to_pay} and discounted amnt : {discounted_amnt} and total price is {total_price}'
             
     def get_discount_percent(self):
